@@ -140,3 +140,6 @@ body{
 .Header-logo{
 	width: 100px;
 }
+.Header-item{
+	list-style-type: none;
+}
