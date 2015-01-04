@@ -1,0 +1,142 @@
+/*Fonts & Icons*/
+	@font-face {
+		font-family: 'icomoon';
+		src:url('fonts/icomoon.eot?1730e6');
+		src:url('fonts/icomoon.eot?#iefix1730e6') format('embedded-opentype'),
+			url('fonts/icomoon.woff?1730e6') format('woff'),
+			url('fonts/icomoon.ttf?1730e6') format('truetype'),
+			url('fonts/icomoon.svg?1730e6#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	[class^="icon-"], [class*=" icon-"] {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.icon-paint-brush:before {
+		content: "\e600";
+	}
+
+	.icon-quill:before {
+		content: "\e907";
+	}
+
+	.icon-display:before {
+		content: "\e956";
+	}
+
+	.icon-mobile:before {
+		content: "\e958";
+	}
+
+	.icon-tablet:before {
+		content: "\e95a";
+	}
+
+	.icon-menu2:before {
+		content: "\e9be";
+	}
+
+	.icon-circle-up:before {
+		content: "\ea41";
+	}
+
+	.icon-embed2:before {
+		content: "\ea80";
+	}
+
+	.icon-facebook3:before {
+		content: "\ea8e";
+	}
+
+	.icon-instagram:before {
+		content: "\ea90";
+	}
+
+	.icon-twitter3:before {
+		content: "\ea93";
+	}
+
+	.icon-github:before {
+		content: "\eab1";
+	}
+
+/*SlidersResponsive*/
+	/*-------------SlidersResponsive-----------------*/
+	.rslides {
+		  position: relative;
+		  list-style: none;
+		  overflow: hidden;
+		  width: 100%;
+		  padding: 0;
+		  margin: 0;
+		  z-index: 0;
+
+	  }
+
+	.rslides li {
+		  -webkit-backface-visibility: hidden;
+		  position: absolute;
+		  display: none;
+		  width: 100%;
+		  left: 0;
+		  top: 0;
+		  margin: 0;
+	  }
+
+	.rslides li:first-child {
+		  position: relative;
+		  display: block;
+		  float: left;
+	  }
+
+	.rslides img {
+		  display: block;
+		  height: auto;
+		  float: left;
+		  width: 100%;
+		  border: 0;
+	  }
+
+	  /*------------------ Slide Show 3 ----------*/
+
+	#slider3-pager{
+		list-style-type: none;
+		padding: 0;
+		margin-top: 1em;
+	}
+	#slider3-pager li{
+		display: inline-block;
+	}
+	#slider3 {
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		margin: 0 auto;
+	}
+
+body{
+	background: #eaefe1;
+}
+
+.Header{
+	background: #191919;
+	border-bottom: .2em solid #313131;
+}
+.Header-imageContainer{
+	margin: 0;
+}
+.Header-logo{
+	width: 100px;
+}

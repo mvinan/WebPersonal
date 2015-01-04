@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Miguel Viñan | Web Designer</title>
+	<meta name="description" content="Maquetacion, creacion y diseño de paginas web, este es mi protafolio con tecnicas Responsive desde Loja-Ecuador">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="images/M.ico">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/prefixfree.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+	<header class="Header">
+		<figure class="Header-imageContainer">
+			<img class="Header-logo" src="Images/logo_with_designer.png" alt="logo-miguel-design">
+		</figure>
+		<nav class="Header-nav">
+			<ul class="Header-list">
+				<li class="Header-item"><a class="Header-link" href="#">Home</a></li>
+				<li class="Header-item"><a class="Header-link" href="#">Perfil</a></li>
+				<li class="Header-item"><a class="Header-link" href="#">Work</a></li>
+				<li class="Header-item"><a class="Header-link" href="#">Habilidades</a></li>
+				<li class="Header-item"><a class="Header-link" href="#">Contactame</a></li>
+			</ul>
+		</nav>
+	</header>
+<!-- HOME -->
+	<section class="Home">
+		<figure class="Home-imageContainer">
+			<img class="Home-logo" src="images/logoMiguel.png" alt="">
+		</figure>
+		<div class="Home-boxName">
+			<h2 class="Home-name">Miguel Viñan</h2>
+			<h1 class="Home-subtitle">WEB & GRAFIC DESIGNER</h1>
+		</div>
+	</section>
+<!-- PERFIL -->
+	<section class="Profile">
+		<div class="Profile-boxTitle">
+			<h2 class="Profile-title">PERFIL</br><span class="Profile-subtitle">ACERCA DE MI</span></h2>
+		</div>
+		<ul class="Profile-list">
+			<li class="Profile-item"><a class="Profile-link" target="_blank" href="http://www.facebook.com/MiguelAlejandroVinan">Facebook</a></li>
+			<li class="Profile-item"><a class="Profile-link" target="_blank" href="http://www.twitter.com/MiguelVinan">Twitter</a></li>
+			<li class="Profile-item"><a class="Profile-link" target="_blank" href="http://www.instagram.com/miguelalejandrovh">Instagram</a></li>
+			<li class="Profile-item"><a class="Profile-link" target="_blank" href="http://www.github.com/mvinan">Git Hub</a></li>
+		</ul>
+		<p class="Profile-contact">
+			<a class="Profile-contactLink" href="#">Contactame</a>
+		</p>
+		<div class="Profile-boxProfile">
+			<figure class="Profile-imageContainer">
+				<img class="Profile-avatar" src="images/perfil.jpg" alt="avatar-miguelviñan">
+				<figcaption class="Profile-imageDescription">
+					<a class="Profile-linkDescription" target="_blank" href="http://www.twitter.com/MiguelVinan">@MiguelVinan</a>
+				</figcaption>
+			</figure>
+			<p class="Profile-mision">Mi misión es lograr calidad y satisfacción con mi trabajo entregando un sitio web unico y fácil de usar.</p>
+		</div>
+	</section>
+<!-- Work -->
+	<section class="Work">
+		<div class="Work-boxTitle">
+			<h2 class="Work-title">WORK</br><span class="Work-subtitle">Mira un poco de mi trabajo</span></h2>
+		</div>
+		<div class="Work-boxRslides">
+			<ul class="rslides" id="slider3">
+			  <li><img src="images/work1.png" alt=""></li>
+			  <li><img src="images/work2.jpg" alt=""></li>
+			  <li><img src="images/work3.jpg" alt=""></li>
+			  <li><img src="images/work4.jpg" alt=""></li>
+			</ul>
+
+			<!-- Slideshow 3 Pager -->
+			<ul id="slider3-pager">
+			  <li><a href="#"><img src="images/work1_thumb.png" alt="work-thumb"></a></li>
+			  <li><a href="#"><img src="images/work2_thumb.jpg" alt="work-thumb"></a></li>
+			  <li><a href="#"><img src="images/work3_thumb.jpg" alt="work-thumb"></a></li>
+			  <li><a href="#"><img src="images/work4_thumb.jpg" alt="work-thumb"></a></li>
+			</ul>
+		</div>
+	</section>
+<!-- Habilidades -->
+	<section class="Skills">
+		<div class="Skills-boxTitle">
+			<h2 class="Skills-title">HABILIDADES</br><span class="Skills-subtitle">Capacidad de crear</span></h2>
+		</div>
+		<div class="Skills-boxObjective">
+			<p class="Skills-objective" >Nuestro principal objetivo es hacer los mejores diseños con usabilidad e interactividad con el usuario.</p>
+		</div>
+		<div class="Skills-box">
+			<p class="Skills-faltantes"><span class="Skills-ganadas">Illustrator</span></p>
+			<p class="Skills-faltantes"><span class="Skills-ganadas">Javascript</span></p>
+			<p class="Skills-faltantes"><span class="Skills-ganadas">HTML</span></p>
+			<p class="Skills-faltantes"><span class="Skills-ganadas">Css</span></p>
+		</div>
+	</section>
+<!-- Di, Hola -->
+	<section class="Contact">
+		<div class="Contact-boxTitle">
+			<h2 class="Contact-title">HABILIDADES</br><span class="Contact-subtitle">Capacidad de crear</span></h2>
+		</div>
+		<figure class="Contact-imageContainer">
+			<img class="Contact-logo" src="images/logoMiguel.png" alt="logotipo-Miguel"/>
+			<a class="Contact-mail" href="mailto:mvinan@icloud.com">mvinan@icloud.com</a>
+		</figure>
+		<p class="Contact-parrafo">Cada proyecto es una oportunidad de crear algo único.</p>
+		<form class="Contact-form" action="">
+			<input class="Contact-formUtility" type="text" placeholder="Nombre" class=""/>
+			<input class="Contact-formUtility" type="email" placeholder="Email" class=""/>
+			<input class="Contact-formUtility" type="text" placeholder="Asunto" class=""/>
+			<textarea class="Contact-formUtility" placeholder="Mensaje..."></textarea>
+			<button type="submit" class="Contact-formUtility">Contactame</button>
+		</form>
+	</section>
+<!-- Footer -->
+	<footer class="Footer">
+		<div class="Footer-box">		
+			<h2 class="Footer-title">Miguel Alejandro Viñan</h2>
+			<p class="Footer-line">-</p>
+			<a class="Footer-@MiguelVinan" href="http://www.twitter.com/MiguelVinan">@MiguelVinan</a>
+		</div>
+		<a class ="Footer-up" href="#">UP</a>
+	</footer>
+<!-- scripts -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/js.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+</body>
+</html>
