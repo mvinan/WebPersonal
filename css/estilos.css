@@ -232,12 +232,12 @@ body{
 }
 .Home-name{
 	font-size: 2em;
-	font-weight: bolder;
+	font-weight: 600;
 	color: white;
 	letter-spacing: 3px;
 }
 .Home-subtitle{
-	font-size: .8em;
+	font-size: .7em;
 	font-weight: bold;
 	color: lightgray;
 	letter-spacing: 3px;
