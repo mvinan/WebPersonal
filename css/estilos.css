@@ -180,7 +180,7 @@ body{
 	margin:.7em 0;
 	transition:.3s;
 }
-.Header-item:last-child a:active{
+.Header-item:last-child a:hover{
 	background: #1bc676;
 	transform:scale(1.5);
 }
@@ -191,7 +191,7 @@ body{
 	padding: 1em;
 	text-decoration: none;
 }
-.Header-link:active{
+.Header-link:hover{
 	background: #1bc676;
 	color: white;
 }
