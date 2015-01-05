@@ -228,17 +228,17 @@ body{
 	margin:2em auto 0;
 	padding: .5em 0;
 	border: 1px solid white;
-	width: 260px;
+	width: 280px;
 }
 .Home-name{
-	font-size: 1.5em;
-	font-weight: bold;
+	font-size: 2em;
+	font-weight: bolder;
 	color: white;
 	letter-spacing: 3px;
 }
 .Home-subtitle{
-	font-size: .5em;
-	font-weight: normal;
+	font-size: .8em;
+	font-weight: bold;
 	color: lightgray;
 	letter-spacing: 3px;
 }
@@ -267,7 +267,7 @@ body{
 	font-size: 16px;
 	font-family: Raleway;
 	color: white;
-	font-weight: 100;
+	font-weight: normal;
 }
 .Profile-list{
 	list-style: none;
@@ -295,6 +295,7 @@ body{
 }
 .Profile-contactLink{
 	font-family: Raleway;
+	font-weight: bolder;
 	background: #0f7cfb;
 	color: white;
 	text-decoration: none;
