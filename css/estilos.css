@@ -153,9 +153,6 @@ body{
 	margin: .4em 0 0 .5em;
 	width: 3em;
 }
-.Header-item{
-	list-style-type: none;
-}
 .Header-nav{
 	position: relative;
 	text-align: center;
@@ -164,13 +161,17 @@ body{
 .Header-list{
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 .Header-item{
+	list-style-type: none;
 	border-bottom: 1px solid #d4d4d4;
 	margin: 0 1.5em;
+	padding: .3em 0;
 }
 .Header-item:last-child{
 	border-bottom: none;
+	padding: 0;
 }
 .Header-item:last-child a{
 	/*border: 2px solid red;*/
@@ -179,10 +180,14 @@ body{
 	color: white;
 	margin:.7em 0;
 	transition:.3s;
+
 }
 .Header-item:last-child a:hover{
 	background: #1bc676;
-	transform:scale(1.5);
+	padding: .7em;
+	font-size: 1.2em;
+	margin: .6em 0 .6em 0;
+
 }
 .Header-link{
 	color:#1cd27e;
