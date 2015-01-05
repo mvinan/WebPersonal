@@ -1,11 +1,11 @@
 /*Fonts & Icons*/
 	@font-face {
 		font-family: 'icomoon';
-		src:url('fonts/icomoon.eot?1730e6');
-		src:url('fonts/icomoon.eot?#iefix1730e6') format('embedded-opentype'),
-			url('fonts/icomoon.woff?1730e6') format('woff'),
-			url('fonts/icomoon.ttf?1730e6') format('truetype'),
-			url('fonts/icomoon.svg?1730e6#icomoon') format('svg');
+		src:url('../fonts/icomoon.eot?1730e6');
+		src:url('../fonts/icomoon.eot?#iefix1730e6') format('embedded-opentype'),
+			url('../fonts/icomoon.woff?1730e6') format('woff'),
+			url('../fonts/icomoon.ttf?1730e6') format('truetype'),
+			url('../fonts/icomoon.svg?1730e6#icomoon') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -44,7 +44,8 @@
 		content: "\e95a";
 	}
 
-	.icon-menu2:before {
+	.icon-menu2:after {
+		color: #0f7cfb;
 		content: "\e9be";
 	}
 
@@ -129,17 +130,85 @@
 body{
 	background: #eaefe1;
 }
-
+/*Header*/
 .Header{
 	background: #191919;
-	border-bottom: .2em solid #313131;
+	border-bottom: .3em solid #313131;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.Header-btMenu{
+	font-size: 2em;
+	position: absolute;
+	right: .5em;
+	text-decoration: none;
+	top: .4em;
 }
 .Header-imageContainer{
 	margin: 0;
 }
 .Header-logo{
-	width: 100px;
+	margin: .4em 0 0 .5em;
+	width: 3em;
 }
 .Header-item{
 	list-style-type: none;
 }
+.Header-nav{
+	position: relative;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+	display: none;
+}
+.Header-list{
+	margin: 0;
+	padding: 0;
+}
+.Header-item{
+	border-bottom: 1px solid #d4d4d4;
+	margin: 0 1.5em;
+}
+.Header-item:last-child{
+	border-bottom: none;
+}
+.Header-item:last-child a{
+	/*border: 2px solid red;*/
+	border-radius: 10px;
+	background-color: #0f7cfb;
+	color: white;
+	margin-top: .7em;
+	transition:.3s;
+}
+.Header-link{
+	color:#1bc676;
+	display: block;
+	font-weight: normal;
+	padding: 1em;
+	text-decoration: none;
+}
+.Header-link:active{
+	background: #1bc676;
+	color: white;
+}
+.Header-item:last-child a:active{
+	background: #1bc676;
+	transform:scale(1.5);
+}
+
+/*Home*/
+.Home{
+	margin-top: 5em;
+	text-align: center;
+}
+.Home-imageContainer{
+	margin:0;
+}
+.Home-logo{
+	width: 50%;
+}
+.Home-subtitle,
+.Home-name{
+	margin: 0;
+}
+
