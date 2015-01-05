@@ -128,22 +128,22 @@
 	}
 
 body{
-	background: #eaefe1;
+	background-color: #eaefe1;
 }
 /*Header*/
 .Header{
-	background: #191919;
+	background: rgba(0,0,0,0.9);
 	border-bottom: .3em solid #313131;
 	position: fixed;
 	width: 100%;
 	top: 0;
 }
 .Header-btMenu{
-	font-size: 2em;
+	font-size: 1.7em;
 	position: absolute;
 	right: .5em;
 	text-decoration: none;
-	top: .4em;
+	top: .5em;
 }
 .Header-imageContainer{
 	margin: 0;
@@ -157,7 +157,6 @@ body{
 }
 .Header-nav{
 	position: relative;
-	background-color: rgba(0,0,0,0.8);
 	text-align: center;
 	display: none;
 }
@@ -194,11 +193,20 @@ body{
 .Header-link:hover{
 	background: #1bc676;
 	color: white;
+	border-radius: 10px;
 }
 
 /*Home*/
 .Home{
-	margin-top: 5em;
+	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
+	background-repeat: no-repeat;
+	background-position:0 3.9em;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: #eaefe1;
+
+	margin: 3.9em 0 1em 0;
+	padding: 2em 0 1.8em 0;
 	text-align: center;
 }
 .Home-imageContainer{
