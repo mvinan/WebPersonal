@@ -204,8 +204,8 @@ body{
 .Home-sectionContainer{
 	background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+/*background-attachment: fixed;*/
+	background-size: auto 100%;
 	background-position: center;
 	overflow: hidden;
 	margin:0;
