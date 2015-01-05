@@ -1,6 +1,6 @@
-$(document).ready(main);
+$(document).ready(inicio);
 
-function main(){
+function inicio(){
 	$('.Header-btMenu').click(function(){
 		$('.Header-nav').slideToggle('slow');
 	});
