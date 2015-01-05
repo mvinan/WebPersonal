@@ -177,8 +177,12 @@ body{
 	border-radius: 10px;
 	background-color: #0f7cfb;
 	color: white;
-	margin-top: .7em;
+	margin:.7em 0;
 	transition:.3s;
+}
+.Header-item:last-child a:active{
+	background: #1bc676;
+	transform:scale(1.5);
 }
 .Header-link{
 	color:#1bc676;
@@ -190,10 +194,6 @@ body{
 .Header-link:active{
 	background: #1bc676;
 	color: white;
-}
-.Header-item:last-child a:active{
-	background: #1bc676;
-	transform:scale(1.5);
 }
 
 /*Home*/
