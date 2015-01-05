@@ -137,6 +137,7 @@ body{
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 1;
 }
 .Header-btMenu{
 	font-size: 1.7em;
@@ -184,39 +185,153 @@ body{
 	transform:scale(1.5);
 }
 .Header-link{
-	color:#1bc676;
+	color:#1cd27e;
 	display: block;
 	font-weight: normal;
 	padding: 1em;
 	text-decoration: none;
 }
 .Header-link:hover{
-	background: #1bc676;
+	background: #1cd27e;
 	color: white;
 	border-radius: 10px;
 }
 
 /*Home*/
 .Home{
-	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
+	margin: 3.9em 0 0 0;
+}
+.Home-sectionContainer{
+	background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
 	background-repeat: no-repeat;
-	background-position:0 3.9em;
 	background-attachment: fixed;
-	background-size: 100%;
-	background-color: #eaefe1;
-
-	margin: 3.9em 0 1em 0;
-	padding: 2em 0 1.8em 0;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	margin:0;
+	padding: 5em 0 21.9em 0;
 	text-align: center;
 }
 .Home-imageContainer{
 	margin:0;
 }
 .Home-logo{
-	width: 50%;
+	width: 30%;
 }
 .Home-subtitle,
 .Home-name{
 	margin: 0;
+	line-height: 1.2;
+	font-family: 'Raleway', sans-serif;
+}
+.Home-boxName{
+	margin:2em auto 0;
+	padding: .5em 0;
+	border: 1px solid white;
+	width: 260px;
+}
+.Home-name{
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: white;
+	letter-spacing: 3px;
+}
+.Home-subtitle{
+	font-size: .5em;
+	font-weight: 100;
+	color: lightgray;
+	letter-spacing: 3px;
+}
+/*Perfil*/
+
+.Profile-boxTitle{
+	position: relative;
+	background: #101010;
+}
+.Profile-title,
+.Porfile-subtitle{
+	line-height: .5;
 }
 
+.Profile-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	text-align: center;
+	padding: 0.9em .7em;
+	width: 120px;
+}
+.Profile-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: 100;
+}
+.Profile-list{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	padding: .5em 0;
+}
+.Profile-item{
+	display: inline-block;
+}
+.Profile-link{
+	padding:0;
+	margin: .1em;
+	background: white;
+	font-size: 3em;
+ 	text-decoration: none;
+	color: #0f7cfb;
+	border: 10px solid #58a9f4;
+	border-radius: 50%;
+}
+.Profile-contact{
+	text-align: center;
+	margin:0;
+	box-shadow: 2px 2px 2px black;
+}
+.Profile-contactLink{
+	font-family: Raleway;
+	background: #0f7cfb;
+	color: white;
+	text-decoration: none;
+	padding: 1em 0;
+	display: block;
+}
+.Profile-contactLink:hover{
+	background: #4bbc5a;
+}
+.Profile-boxProfile{
+	text-align: center;
+	background: #212121;
+
+}
+.Profile-imageContainer{
+	margin: 0;
+	padding: 2em 1.5em;
+}
+.Profile-avatar{
+	width: 230px;
+	border-radius: 50%;
+}
+.Profile-mision{
+	font: lighter 1.2em 'Raleway', sans-serif;
+	line-height: 1.3em;
+	text-align: left;
+	background: #393939;
+	padding: 1.6em;
+	color: white;
+}
+
+
+
+
+
+
+/*Contact*/
+.Contact-logo{
+	width:230px;
+}
