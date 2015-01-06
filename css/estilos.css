@@ -308,9 +308,6 @@ body{
 	display: block;
 	border-bottom: 2px solid #2344bd;
 }
-.Profile-contactLink:hover{
-	background: #4bbc5a;
-}
 .Profile-boxProfile{
 	text-align: center;
 	background: #212121;
@@ -334,9 +331,6 @@ body{
 	color: white;
 	border-radius: 10px;
 	border-bottom: 4px solid #159a59;
-}
-.Profile-linkDescription:hover{
-	background: #006cdd;
 }
 
 .Profile-mision{
@@ -421,7 +415,7 @@ body{
 	background-position: center;
 }
 .Skills-objective{
-	margin: 0;
+	margin: 0 0 1em 0;
 	padding: 2em 1.8em;
 	color: white;
 }
@@ -436,31 +430,6 @@ body{
 	margin: .2em;
 	padding: .2em .4em;
 	font-size: 3em;
-}
-.Skills-box{
-	padding: .4em;
-}
-.Skills-faltantes{
-	background: #262626;
-	padding: 0;
-	margin: 0;
-}
-.Skills-ganadas{
-	background: #1bc676;
-	padding: .3em .3em .3em .7em;
-	color: white;
-}
-.u-illustrator{
-	width: 80%;
-}
-.u-javascript{
-	width: 60%;
-}
-.u-html{
-	width: 70%;
-}
-.u-css{
-	width: 90%;
 }
 
 /*Contact*/
@@ -502,31 +471,21 @@ body{
 .Contact-imageContainer{
 	text-align: center;
 }
+.Contact-mediante{
+	color: white;
+}
 .Contact-mail{
-	color: #036edb;
+	color: #00FFB2;
+	display: block;
+	padding: 1em;
+	/* border: 1px solid white; */
+	border-radius: 9px;
+	background: #337584;
+	font-family: 'Raleway';
 }
 .Contact-parrafo{
 	color: white;
 	padding: 1em 2em;
-}
-.Contact-formUtility{
-	border: none;
-	border-radius: 10px;
-	display: block;
-	position: relative;
-	padding: .4em .5em;
-	margin: 0.5em auto;
-}
-.u-textarea{
-	resize:vertical;
-	margin-bottom: 1em;
-}
-.u-button{
-	color: white;
-	background: #1bc676;
-	border-radius: 0;
-	padding: .4em 3.5em;
-	border-bottom: 3px solid #16a865;
 }
 
 /*Footer*/
