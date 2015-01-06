@@ -336,7 +336,7 @@ body{
 	border-bottom: 4px solid #159a59;
 }
 .Profile-linkDescription:hover{
-	
+	background: #006cdd;
 }
 
 .Profile-mision{
@@ -346,14 +346,218 @@ body{
 	background: #393939;
 	padding: 1.6em;
 	color: white;
+	margin-bottom: 0;
 }
 
+/*Work*/
+.Work-boxTitle{
+	position: relative;
+	background: #101010;
+	margin-bottom: 1em;
+}
+.Work-title,
+.Work-subtitle{
+	line-height: .5;
+}
 
+.Work-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	text-align: center;
+	padding: 0.9em .7em;
+	width: 120px;
+}
+.Work-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+#slider3-pager{
+	text-align: center;
+}
 
+#slider3-pager li{
+	position: relative;
+	width: 70px;
+}
+#slider3-pager li a img{
+	width: 100%;
+}
+/*Habilidades*/
+.Skills-boxTitle{
+	position: relative;
+	background: #101010;
+	text-align: center;
+}
+.Skills-title,
+.Skills-subtitle{
+	line-height: .5;
+}
 
-
+.Skills-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	padding: .8em 0;
+	width: 260px;
+}
+.Skills-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+.Skills-boxObjective{
+	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/coverWebDesign.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	background-size: auto 100%;*/
+	background-position: center;
+}
+.Skills-objective{
+	margin: 0;
+	padding: 2em 1.8em;
+	color: white;
+}
+.Skills-list{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.Skills-icon{
+	display: inline-block;
+	color: #1bc676;
+	margin: .2em;
+	padding: .2em .4em;
+	font-size: 3em;
+}
+.Skills-box{
+	padding: .4em;
+}
+.Skills-faltantes{
+	background: #262626;
+	padding: 0;
+	margin: 0;
+}
+.Skills-ganadas{
+	background: #1bc676;
+	padding: .3em .3em .3em .7em;
+	color: white;
+}
+.u-illustrator{
+	width: 80%;
+}
+.u-javascript{
+	width: 60%;
+}
+.u-html{
+	width: 70%;
+}
+.u-css{
+	width: 90%;
+}
 
 /*Contact*/
+.Contact{
+	background: #212121;
+	text-align: center;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+.Contact-boxTitle{
+	position: relative;
+	background: #101010;
+	text-align: center;
+}
+.Contact-title,
+.Contact-subtitle{
+	line-height: .5;
+}
+
+.Contact-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	padding: .8em 0;
+	width: 200px;
+}
+.Contact-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
 .Contact-logo{
+	margin: 1em 0 1em;
 	width:230px;
+}
+.Contact-imageContainer{
+	text-align: center;
+}
+.Contact-mail{
+	color: #036edb;
+}
+.Contact-parrafo{
+	color: white;
+	padding: 1em 2em;
+}
+.Contact-formUtility{
+	border: none;
+	border-radius: 10px;
+	display: block;
+	position: relative;
+	padding: .4em .5em;
+	margin: 0.5em auto;
+}
+.u-textarea{
+	resize:vertical;
+	margin-bottom: 1em;
+}
+.u-button{
+	color: white;
+	background: #1bc676;
+	border-radius: 0;
+	padding: .4em 3.5em;
+	border-bottom: 3px solid #16a865;
+}
+
+/*Footer*/
+
+.Footer{
+	background: #1186fc;
+	margin: 0;
+	text-align: center;
+}
+.Footer-title{
+	margin: 0;
+	padding: 1em .5em 0;
+	color: white;
+	font-family: "Raleway";
+}
+.Footer-line{
+	color: white;
+	margin: 0;
+}
+.Footer-MiguelVinan{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 1em;
+}
+.Footer-up{
+	background: black;
+	text-decoration: none;
+	color: #f59e9b;
+	left: 0;
+	right: 0;
+	position: absolute;
+	padding: .5em;
 }
