@@ -456,8 +456,8 @@ body{
 	display: inline-block;
 	color: #1bc676;
 	margin: .2em;
-	padding: .2em .4em;
-	font-size: 3em;
+	padding: 1em .4em;
+	font-size: 2em;
 }
 .icon-tablet{
 	display: none;
@@ -632,20 +632,25 @@ body{
 		left: 5%;
 		font-size: 2em;
 	}
+	.Profile-imageContainer{
+		display: inline-block;
+	}
 	.Profile-boxProfile{
-		padding: 3em;
+		padding: 3em 0;
 	}
 	.Profile-avatar{
-		width: 325px;
+		width: 225px;
 	}
 	.Profile-linkDescription{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.Profile-mision{
-		margin: 1em auto;
-		max-width: 412px ;
+		margin: 3.9em auto;
+		max-width: 300px ;
 		border-radius: 10px;
-		font-size: 2em;
+		font-size: 1.5em;
+		display:inline-block;
+		vertical-align: top;
 	}
 	/*Work*/
 
@@ -703,7 +708,10 @@ body{
 		font-size: 2em;
 	}
 	/*Di, HOla (Contact)*/
-	
+	.Contact-logo{
+		margin: 2em 0 1em;
+		width: 50%;
+	}
 	.Contact-title{
 		position: relative;
 		font-size: 4em;
@@ -716,7 +724,7 @@ body{
 		left: 35px;
 	}
 	.Contact-mediante{
-		font-size: 2em;
+		font-size: 1.5em;
 		width: 80%;
 		margin: 1em auto;
 	}
@@ -727,9 +735,13 @@ body{
 		border-radius: 32px;
 	}
 	.Contact-parrafo{
-		font-size: 2em;
+		font-size: 1.5em;
 		max-width: 80%;
 		margin: 2em auto;
+	}
+	.Footer-up{
+		font-size: 2em;
+		padding: .5em;
 	}
 
 }
