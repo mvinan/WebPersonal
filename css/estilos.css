@@ -249,7 +249,7 @@ body{
 	margin:2em auto 0;
 	padding: .5em 0;
 	border: 1px solid white;
-	width: 280px;
+	width: 300px;
 }
 .Home-name{
 	font-size: 2em;
@@ -709,8 +709,9 @@ body{
 	}
 	/*Di, HOla (Contact)*/
 	.Contact-logo{
-		margin: 2em 0 1em;
-		width: 50%;
+		margin: 4em 2em 1em 0;
+		width: 40%;
+		display: inline-block;
 	}
 	.Contact-title{
 		position: relative;
@@ -725,8 +726,10 @@ body{
 	}
 	.Contact-mediante{
 		font-size: 1.5em;
-		width: 80%;
-		margin: 1em auto;
+		width: 40%;
+		margin: 3em auto;
+		display: inline-block;
+		vertical-align: top;
 	}
 	.Contact-mail{
 		max-width: 50%;
@@ -738,6 +741,7 @@ body{
 		font-size: 1.5em;
 		max-width: 80%;
 		margin: 2em auto;
+		text-transform: uppercase;
 	}
 	.Footer-up{
 		font-size: 2em;
