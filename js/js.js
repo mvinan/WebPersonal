@@ -5,10 +5,13 @@ function inicio(){
 		$('.Header-nav').slideToggle('slow');
 	});
 
-
 	$("#slider3").responsiveSlides({
 		manualControls: '#slider3-pager',
 		maxwidth: 800
 	});
+}
 
+
+window.onload=function(){
+	alert("imagenes, cargadas y listas");
 }

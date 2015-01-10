@@ -220,7 +220,7 @@ body{
 
 /*Home*/
 .Home{
-	margin: 3.9em 0 0 0;
+	margin: 0;
 }
 .Home-sectionContainer{
 	background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
@@ -230,7 +230,7 @@ body{
 	background-position: center;
 	overflow: hidden;
 	margin:0;
-	padding: 5em 0 21.9em 0;
+	padding: 9em 0 21.9em 0;
 	text-align: center;
 }
 .Home-imageContainer{
@@ -590,6 +590,7 @@ body{
 	}
 	.Header-link{
 		padding: 1em .7em;
+		transition:1s;
 	}
 	.Home-boxLink{
 		display: block;
@@ -748,4 +749,14 @@ body{
 		padding: .5em;
 	}
 
+}
+@media screen and (min-width: 1000px) {
+	.Header{
+		display: none;
+	}
+	.Home-sectionContainer{
+		background-attachment: fixed;
+	}
+
+	
 }
