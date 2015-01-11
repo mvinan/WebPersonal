@@ -1,3 +1,4 @@
+
 /*Fonts & Icons*/
 	@font-face {
 		font-family: 'icomoon';
@@ -758,17 +759,12 @@ body{
 	.Home-sectionContainer{
 		background-attachment: fixed;
 	}
-	
-	@keyframes spin {
-		to {
-			transform: rotate(1turn);
-		}
+	.Profile-link{
+		transition:1s;
 	}
-
-	.Home-logo:hover {
-		animation: spin 1s linear infinite;
+	.Profile-link:hover{
+		transform: scale(1.5);
 	}
-
 
 
 
