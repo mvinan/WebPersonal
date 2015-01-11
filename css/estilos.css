@@ -584,7 +584,7 @@ body{
 	}
 	.Header-link{
 		padding: 1em .7em;
-		transition:1s;
+		transition:.4s;
 	}
 	.Home-boxLink{
 		display: block;
@@ -759,12 +759,14 @@ body{
 		background-attachment: fixed;
 	}
 	
-	@keyframes rotate {
-		from{ transform:rotate(15deg)}
-		to{transform:rotate(375deg)}
+	@keyframes spin {
+		to {
+			transform: rotate(1turn);
+		}
 	}
-	.Home-logo:hover{
-		animation: rotate;
+
+	.Home-logo:hover {
+		animation: spin 1s linear infinite;
 	}
 
 
