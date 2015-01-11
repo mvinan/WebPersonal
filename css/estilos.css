@@ -13,7 +13,6 @@
 
 	[class^="icon-"], [class*=" icon-"] {
 		font-family: 'icomoon';
-		speak: none;
 		font-style: normal;
 		font-weight: normal;
 		font-variant: normal;
@@ -752,6 +751,9 @@ body{
 		border-bottom: none;
 		position: absolute;
 	}
+	.Header-logo{
+		display:none;
+	}
 	.u-penultimoItem {
 		border-right: none;
 	}
@@ -759,11 +761,25 @@ body{
 	.Home-sectionContainer{
 		background-attachment: fixed;
 	}
-	.Profile-link{
-		transition:1s;
+	.Header-list{
+		overflow: visible;
 	}
-	.Profile-link:hover{
-
+	.Header-link{
+		color: white;
+		font-size: .8em;
+		transition:.4s;
+	}
+	.Header-item:first-child{
+		display:none;
+	}
+	.Header-link:hover{
+		transform:scale(1.5);
+		-webkit-transform:scale(1.5);
+		-ms-transform:scale(1.5);
+	}
+	.Header-item:last-child a{
+		margin: 0 2em 0 0 ;
+		border-radius: 0 0 10px 10px;
 	}
 
 
