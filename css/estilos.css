@@ -200,9 +200,6 @@ body{
 }
 .Header-item:last-child a:hover{
 	background: #1bc676;
-	padding: .7em;
-	font-size: 1.2em;
-	margin: .6em 0 .6em 0;
 
 }
 .Header-link{
@@ -585,9 +582,6 @@ body{
 	.Header-item:last-child a{
 		padding: 1em 2.5em;		
 	}
-	.Header-item:last-child a:hover{
-		padding: .7em 2em;	
-	}
 	.Header-link{
 		padding: 1em .7em;
 		transition:1s;
@@ -751,12 +745,30 @@ body{
 
 }
 @media screen and (min-width: 1000px) {
+
 	.Header{
-		display: none;
+		background: none;
+		border-bottom: none;
+		position: absolute;
 	}
+	.u-penultimoItem {
+		border-right: none;
+	}
+
 	.Home-sectionContainer{
 		background-attachment: fixed;
 	}
+	
+	@keyframes rotate {
+		from{ transform:rotate(15deg)}
+		to{transform:rotate(375deg)}
+	}
+	.Home-logo:hover{
+		animation: rotate;
+	}
+
+
+
 
 	
 }
