@@ -802,7 +802,7 @@ section, header, footer{
 		border-radius: 0 0 10px 10px;
 	}
 
-	/*Header animaciones*/
+	/*animaciones con opacity del Header*/
 	.Header-item:nth-child(2),
 	.Header-item:nth-child(3),
 	.Header-item:nth-child(4){
@@ -810,10 +810,12 @@ section, header, footer{
 	}
 
 	/*Empieza el Home*/
-	.Home-logo{
+	.Home-logo,
+	.Home-boxName{
 		opacity: 0;
 	}
-	.Home-boxName{
+	/*empieza el Profile*/
+	.Profile-link{
 		opacity: 0;
 	}
 

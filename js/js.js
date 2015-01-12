@@ -84,6 +84,12 @@ window.setTimeout(function(){
 					offset:'70%',
 					triggerOnce:true
 			});
+			$('.Profile-link').waypoint(function(){
+				$(this).toggleClass('bounceInLeft animated');},
+				{
+					offset:'70%',
+					triggerOnce:true
+			});
 
 		});
 		// hasta aqui es el codigo ejecutador de animated.css
