@@ -142,10 +142,26 @@
 		-webkit-box-shadow: none;
 		margin: 0 auto;
 	}
-
-body{
-	background-color: #eaefe1;
+/*Aqui esta el estilo prediseñado para mostrar un loading antes de la carga :)*/
+.loading {
+	background: url('../images/ico_loading.gif');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	background-color: black;
+	background-size: 10% 14%; 
 }
+section, header, footer{
+	opacity: 0;
+	-webkit-transition:opacity .6s;
+	-moz-transition:opacity .6s;
+	-o-transition:opacity .6s;
+	transition: opacity .6s;
+}
+.loaded section,.loaded header,.loaded footer{
+	opacity: 1;
+}
+
 /*Header*/
 .Header{
 	background: rgba(0,0,0,0.9);
@@ -208,6 +224,7 @@ body{
 	font-weight: normal;
 	padding: 1em;
 	text-decoration: none;
+
 }
 .Header-link:hover{
 	background: #1cd27e;
@@ -262,6 +279,9 @@ body{
 }
 .Home-boxLink{
 	display: none;
+}
+.Home-link{
+	opacity: 0;
 }
 /*Perfil*/
 
@@ -589,7 +609,7 @@ body{
 	.Home-boxLink{
 		display: block;
 		position: relative;
-		margin-top: 18em;
+		margin-top: 25em;
 	}
 	.Home-link{
 		padding: 1.5em 3em;
@@ -781,7 +801,7 @@ body{
 		margin: 0 2em 0 0 ;
 		border-radius: 0 0 10px 10px;
 	}
-
+	
 
 	
 }
