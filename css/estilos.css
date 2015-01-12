@@ -144,7 +144,7 @@
 	}
 /*Aqui esta el estilo prediseñado para mostrar un loading antes de la carga :)*/
 .loading {
-	background: url('../images/ico_loading.gif');
+	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/ico_loading.gif);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-attachment: fixed;
