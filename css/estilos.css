@@ -1,18 +1,18 @@
+
 /*Fonts & Icons*/
 	@font-face {
 		font-family: 'icomoon';
-		src:url('fonts/icomoon.eot?1730e6');
-		src:url('fonts/icomoon.eot?#iefix1730e6') format('embedded-opentype'),
-			url('fonts/icomoon.woff?1730e6') format('woff'),
-			url('fonts/icomoon.ttf?1730e6') format('truetype'),
-			url('fonts/icomoon.svg?1730e6#icomoon') format('svg');
+		src:url('../fonts/icomoon.eot?1730e6');
+		src:url('../fonts/icomoon.eot?#iefix1730e6') format('embedded-opentype'),
+			url('../fonts/icomoon.woff?1730e6') format('woff'),
+			url('../fonts/icomoon.ttf?1730e6') format('truetype'),
+			url('../fonts/icomoon.svg?1730e6#icomoon') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
 
 	[class^="icon-"], [class*=" icon-"] {
 		font-family: 'icomoon';
-		speak: none;
 		font-style: normal;
 		font-weight: normal;
 		font-variant: normal;
@@ -26,6 +26,12 @@
 
 	.icon-paint-brush:before {
 		content: "\e600";
+		color: crimson;
+		border: 16px solid rgb(220, 20, 60);
+		border-radius: 50%;
+		padding: 17px;
+		margin: 0;
+		background: rgb(234, 239, 225);
 	}
 
 	.icon-quill:before {
@@ -38,13 +44,24 @@
 
 	.icon-mobile:before {
 		content: "\e958";
+		border: 16px solid rgb(27, 198, 118);
+		border-radius: 50%;
+		padding: 17px;
+		margin: 0;
+		background: rgb(234, 239, 225);	
 	}
-
 	.icon-tablet:before {
 		content: "\e95a";
+		color: cornflowerblue;
+		border: 16px solid rgb(100, 149, 237);
+		border-radius: 135px;
+		padding: 17px;
+		margin: 0;
+		background: rgb(234, 239, 225);
 	}
 
-	.icon-menu2:before {
+	.icon-menu2:after {
+		color: #0f7cfb;
 		content: "\e9be";
 	}
 
@@ -125,21 +142,666 @@
 		-webkit-box-shadow: none;
 		margin: 0 auto;
 	}
-
-body{
-	background: #eaefe1;
+/*Aqui esta el estilo prediseñado para mostrar un loading antes de la carga :)*/
+.loading {
+	background: url('../images/ico_loading.gif');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	background-color: black;
+	background-size: 10% 14%; 
+}
+section, header, footer{
+	opacity: 0;
+	-webkit-transition:opacity .6s;
+	-moz-transition:opacity .6s;
+	-o-transition:opacity .6s;
+	transition: opacity .6s;
+}
+.loaded section,.loaded header,.loaded footer{
+	opacity: 1;
 }
 
+/*Header*/
 .Header{
-	background: #191919;
-	border-bottom: .2em solid #313131;
+	background: rgba(0,0,0,0.9);
+	border-bottom: .3em solid #313131;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+.Header-btMenu{
+	font-size: 1.7em;
+	position: absolute;
+	right: .5em;
+	text-decoration: none;
+	top: .5em;
 }
 .Header-imageContainer{
 	margin: 0;
 }
 .Header-logo{
-	width: 100px;
+	margin: .4em 0 0 .5em;
+	width: 3em;
+}
+.Header-nav{
+	position: relative;
+	text-align: center;
+	display: none;
+}
+.Header-list{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 .Header-item{
 	list-style-type: none;
+	border-bottom: 1px solid #d4d4d4;
+	margin: 0 1.5em;
+	padding: .3em 0;
+}
+.Header-item:last-child{
+	border-bottom: none;
+	padding: 0;
+}
+.Header-item:last-child a{
+	/*border: 2px solid red;*/
+	border-radius: 10px;
+	background-color: #0f7cfb;
+	color: white;
+	margin:.7em 0;
+	transition:.3s;
+
+}
+.Header-item:last-child a:hover{
+	background: #1bc676;
+
+}
+.Header-link{
+	color:#1cd27e;
+	display: block;
+	font-weight: normal;
+	padding: 1em;
+	text-decoration: none;
+
+}
+.Header-link:hover{
+	background: #1cd27e;
+	color: white;
+	border-radius: 10px;
+}
+
+/*Home*/
+.Home{
+	margin: 0;
+}
+.Home-sectionContainer{
+	background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/backgroundResponsive.jpg);
+	background-repeat: no-repeat;
+/*	background-size: auto 100%;*/
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	margin:0;
+	padding: 9em 0 21.9em 0;
+	text-align: center;
+}
+.Home-imageContainer{
+	margin:0;
+}
+.Home-logo{
+	width: 30%;
+}
+.Home-subtitle,
+.Home-name{
+	margin: 0;
+	line-height: 1.2;
+	font-family: 'Raleway', sans-serif;
+}
+.Home-boxName{
+	margin:2em auto 0;
+	padding: .5em 0;
+	border: 1px solid white;
+	width: 300px;
+}
+.Home-name{
+	font-size: 2em;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 3px;
+}
+.Home-subtitle{
+	font-size: .7em;
+	font-weight: bold;
+	color: lightgray;
+	letter-spacing: 3px;
+}
+.Home-boxLink{
+	display: none;
+}
+.Home-link{
+	opacity: 0;
+}
+/*Perfil*/
+
+.Profile-boxTitle{
+	position: relative;
+	background: #101010;
+}
+.Profile-title,
+.Porfile-subtitle{
+	line-height: .5;
+}
+
+.Profile-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	text-align: center;
+	padding: 0.9em .7em;
+	width: 120px;
+}
+.Profile-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+.Profile-list{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	padding: .5em 0;
+}
+.Profile-item{
+	display: inline-block;
+}
+.Profile-link{
+	padding:0;
+	margin: .1em;
+	background: white;
+	font-size: 2.5em;
+ 	text-decoration: none;
+	color: #0f7cfb;
+	border: 10px solid #58a9f4;
+	border-radius: 50%;
+}
+.Profile-contact{
+	text-align: center;
+	margin:0;
+	box-shadow: 2px 2px 2px black;
+}
+.Profile-contactLink{
+	font-family: Raleway;
+	font-weight: bolder;
+	background: #0f7cfb;
+	color: white;
+	text-decoration: none;
+	padding: 1em 0;
+	display: block;
+	border-bottom: 2px solid #2344bd;
+}
+.Profile-boxProfile{
+	text-align: center;
+	background: #212121;
+
+}
+.Profile-imageContainer{
+	margin: 0;
+	padding: 2em 1.5em;
+}
+.Profile-avatar{
+	width: 230px;
+	border-radius: 50%;
+}
+.Profile-imageDescription{
+	margin-top: 1em;
+}
+.Profile-linkDescription{
+	text-decoration: none;
+	padding: .5em 2em;
+	background: #1bc676;
+	color: white;
+	border-radius: 10px;
+	border-bottom: 4px solid #159a59;
+}
+
+.Profile-mision{
+	font: lighter 1.2em 'Raleway', sans-serif;
+	line-height: 1.3em;
+	text-align: left;
+	background: #393939;
+	padding: 1.6em;
+	color: white;
+	margin: 0 auto;
+	max-width: 300px;
+}
+
+/*Work*/
+.Work-boxTitle{
+	position: relative;
+	background: #101010;
+	margin-bottom: 1em;
+}
+.Work-title,
+.Work-subtitle{
+	line-height: .5;
+}
+
+.Work-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	text-align: center;
+	padding: 0.9em .7em;
+	width: 120px;
+}
+.Work-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+.Work-description{
+	display: none;
+}
+#slider3-pager{
+	text-align: center;
+}
+
+#slider3-pager li{
+	position: relative;
+	width: 70px;
+}
+#slider3-pager li a img{
+	width: 100%;
+}
+/*Habilidades*/
+.Skills-boxTitle{
+	position: relative;
+	background: #101010;
+	text-align: center;
+}
+.Skills-title,
+.Skills-subtitle{
+	line-height: .5;
+}
+
+.Skills-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	padding: .8em 0;
+	width: 260px;
+}
+.Skills-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+.Skills-description{
+	display: none;
+}
+.Skills-boxObjective{
+	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/coverWebDesign.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	background-size: auto 100%;*/
+	background-position: center;
+}
+.Skills-objective{
+	margin: 0 auto 1em;
+	padding: 2em 1.8em;
+	color: white;
+	max-width: 300px;
+}
+.Skills-list{
+	padding: 3em 0 0 0;
+	margin: 0;
+	text-align: center;
+}
+
+.Skills-icon{
+	display: inline-block;
+	color: #1bc676;
+	margin: .2em;
+	padding: 1em .4em;
+	font-size: 2em;
+}
+.icon-tablet{
+	display: none;
+}
+
+/*Contact*/
+.Contact{
+	background: #212121;
+	text-align: center;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+.Contact-boxTitle{
+	position: relative;
+	background: #101010;
+	text-align: center;
+}
+.Contact-title,
+.Contact-subtitle{
+	line-height: .5;
+}
+
+.Contact-title{
+	background: #262626;
+	color: #0f7cfb;
+	font-size: 2.7em;
+	font-family: 'Oswald', sans-serif;
+	margin:0 auto;
+	padding: .8em 0;
+	width: 200px;
+}
+.Contact-subtitle{
+	font-size: 16px;
+	font-family: Raleway;
+	color: white;
+	font-weight: normal;
+}
+.Contact-logo{
+	margin: 1em 0 1em;
+	width:60%;
+}
+.Contact-imageContainer{
+	text-align: center;
+}
+.Contact-mediante{
+	color: white;
+}
+.Contact-mail{
+	color: #00FFB2;
+	display: block;
+	padding: 1em;
+	/* border: 1px solid white; */
+	border-radius: 9px;
+	background: #337584;
+	font-family: 'Raleway';
+}
+.Contact-parrafo{
+	color: white;
+	padding: 1em 2em;
+}
+
+/*Footer*/
+
+.Footer{
+	background: #1186fc;
+	margin: 0;
+	text-align: center;
+}
+.Footer-title{
+	margin: 0;
+	padding: 1em .5em 0;
+	color: white;
+	font-family: "Raleway";
+}
+.Footer-line{
+	color: white;
+	margin: 0;
+}
+.Footer-MiguelVinan{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 1em;
+}
+.Footer-up{
+	background: black;
+	text-decoration: none;
+	color: #f59e9b;
+	left: 0;
+	right: 0;
+	position: absolute;
+	padding: .5em;
+}
+
+@media screen and (min-width: 750px ) {
+	
+	.Header-btMenu{
+		display: none;
+	}
+	.Header-imageContainer{
+		display: inline-block;
+	}
+	.Header-nav{
+		display: inline-block;
+		position: absolute;
+		right: 0;
+	}
+	.Header-item{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		border-bottom: none;
+	}
+	.Header-logo{
+		margin: .2em 0 0 1em;
+		width: 4em;
+	}
+	.u-penultimoItem{
+		border-right: 2px solid white;
+		padding: 0 1em 0 0;
+	}
+	.Header-item:last-child{
+		margin: 0 1em 0 3em;
+	}
+	.Header-item:last-child a{
+		padding: 1em 2.5em;		
+	}
+	.Header-link{
+		padding: 1em .7em;
+		transition:.4s;
+	}
+	.Home-boxLink{
+		display: block;
+		position: relative;
+		margin-top: 25em;
+	}
+	.Home-link{
+		padding: 1.5em 3em;
+		border-bottom: 6px solid #0a498c;
+		border-radius: 10px;
+		background: #0f7bf9;
+		color: white;
+		text-decoration: none;
+		font-family: raleway;
+		letter-spacing: 2px;
+	}
+	/*Profile*/
+	.Profile{
+		position: relative;
+	}
+	.Profile-contact{
+		display: none;
+	}
+	.Profile-boxTitle{
+		padding-bottom: 0;
+	}
+	.Profile-title{
+		margin: 0 0 0 70%;
+		font-size: 4em;
+		padding: 1em 1em 1em .3em;
+	}
+	.Profile-subtitle{
+		position: absolute;
+		top: 118px;
+	}
+	.Profile-list{
+		position: absolute;
+		float: left;
+		top: -10px;
+		left: 5%;
+		font-size: 2em;
+	}
+	.Profile-imageContainer{
+		display: inline-block;
+	}
+	.Profile-boxProfile{
+		padding: 3em 0;
+	}
+	.Profile-avatar{
+		width: 225px;
+	}
+	.Profile-linkDescription{
+		font-size: 1.5em;
+	}
+	.Profile-mision{
+		margin: 3.9em auto;
+		max-width: 300px ;
+		border-radius: 10px;
+		font-size: 1.5em;
+		display:inline-block;
+		vertical-align: top;
+	}
+	/*Work*/
+
+	.Work-title{
+		position: relative;
+		font-size: 4em;
+		padding: 1em 1em 1.5em .5em;
+		margin-right: 70%;
+	}
+	.Work-subtitle{
+		position: absolute;
+		top: 122px;
+		left: 5px;
+	}
+	.Work-description{
+		display: inline-block;
+		color: white;
+		position: absolute;
+		top: 15%;
+		right: 2%;
+		max-width: 60%;
+		font-size: 1.5em;
+	}
+	/*Skills*/
+	.Skills-title{
+		position: relative;
+		font-size: 4em;
+		padding: 1em 2em 1.5em .5em;
+		margin-right: 5%;
+	}
+	.Skills-subtitle{
+		position: absolute;
+		top: 122px;
+		left: 35px;
+	}
+	.Skills-description{
+		color: white;
+		position: absolute;
+		top: 2em;
+		left: 5%;
+		max-width: 30%;
+		font-size: 1.5em;
+		display: block;
+	}
+	.Skills-icon{
+		font-size: 6em;
+		margin: .9em 0;
+	}
+	.icon-tablet{
+		display: inline-block;
+	}
+	.Skills-objective{
+		max-width: 500px;
+		text-align: center;
+		font-size: 2em;
+	}
+	/*Di, HOla (Contact)*/
+	.Contact-logo{
+		margin: 4em 2em 1em 0;
+		width: 40%;
+		display: inline-block;
+	}
+	.Contact-title{
+		position: relative;
+		font-size: 4em;
+		padding: 1em 2em 1.5em .5em;
+		margin-right: 5%;
+	}
+	.Contact-subtitle{
+		position: absolute;
+		top: 122px;
+		left: 35px;
+	}
+	.Contact-mediante{
+		font-size: 1.5em;
+		width: 40%;
+		margin: 3em auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.Contact-mail{
+		max-width: 50%;
+		margin: 2em auto;
+		font-size: 2em;
+		border-radius: 32px;
+	}
+	.Contact-parrafo{
+		font-size: 1.5em;
+		max-width: 80%;
+		margin: 2em auto;
+		text-transform: uppercase;
+	}
+	.Footer-up{
+		font-size: 2em;
+		padding: .5em;
+	}
+
+}
+@media screen and (min-width: 1000px) {
+
+	.Header{
+		background: none;
+		border-bottom: none;
+		position: absolute;
+	}
+	.Header-logo{
+		display:none;
+	}
+	.u-penultimoItem {
+		border-right: none;
+	}
+
+	.Home-sectionContainer{
+		background-attachment: fixed;
+	}
+	.Header-list{
+		overflow: visible;
+	}
+	.Header-link{
+		color: white;
+		font-size: .8em;
+		transition:.4s;
+	}
+	.Header-item:first-child{
+		display:none;
+	}
+	.Header-link:hover{
+		transform:scale(1.5);
+		-webkit-transform:scale(1.5);
+		-ms-transform:scale(1.5);
+	}
+	.Header-item:last-child a{
+		margin: 0 2em 0 0 ;
+		border-radius: 0 0 10px 10px;
+	}
+	
+
+	
 }
