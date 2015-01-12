@@ -801,6 +801,22 @@ section, header, footer{
 		margin: 0 2em 0 0 ;
 		border-radius: 0 0 10px 10px;
 	}
+
+	/*Header animaciones*/
+	.Header-item:nth-child(2),
+	.Header-item:nth-child(3),
+	.Header-item:nth-child(4){
+		opacity: 0;
+	}
+
+	/*Empieza el Home*/
+	.Home-logo{
+		opacity: 0;
+	}
+	.Home-boxName{
+		opacity: 0;
+	}
+
 	
 
 	
