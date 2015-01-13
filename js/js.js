@@ -76,7 +76,7 @@ window.setTimeout(function(){
 					triggerOnce: true
 				});
 			$('.Home-link').waypoint(function(){
-				$(this).toggleClass('zoomInUp animated');},
+				$(this).toggleClass('flipInX animated');},
 				{
 					offset:'70%',
 					triggerOnce:true
