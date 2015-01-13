@@ -11,6 +11,7 @@ function inicio(){
 		manualControls: '#slider3-pager',
 		maxwidth: 800
 	});
+
 }
 
 $(window).load(function() {
@@ -33,6 +34,8 @@ function start() {
 	
 	$('body').removeClass("loading").addClass('loaded');
 	window.scrollTo(0,0);
+
+
 
 window.setTimeout(function(){
 		//aqui esta el codigo que ejecuta las animaciones
@@ -64,7 +67,7 @@ window.setTimeout(function(){
 				});
 			}, 900);
 
-			//inician las nimaciones de Home
+			//inician las animaciones de Home
 			$('.Home-logo').waypoint(function() {
 				$(this).toggleClass( 'bounceInDown animated' );
 				},
@@ -73,7 +76,7 @@ window.setTimeout(function(){
 					triggerOnce: true
 				});
 			$('.Home-link').waypoint(function(){
-				$(this).toggleClass('fadeInRightBig animated');},
+				$(this).toggleClass('zoomInUp animated');},
 				{
 					offset:'70%',
 					triggerOnce:true
@@ -84,12 +87,106 @@ window.setTimeout(function(){
 					offset:'70%',
 					triggerOnce:true
 			});
+
 			$('.Profile-link').waypoint(function(){
-				$(this).toggleClass('bounceInLeft animated');},
+				$(this).toggleClass('rotateInDownLeft animated');
+				},
+				{
+					offset:'80%',
+					triggerOnce:true,
+			});
+
+
+			$('.Profile-avatar').waypoint(function(){
+				$(this).toggleClass('fadeInLeft animated');
+				},
 				{
 					offset:'70%',
-					triggerOnce:true
+					triggerOnce:true,
 			});
+			$('.Profile-linkDescription').waypoint(function(){
+				$(this).toggleClass('fadeInUp animated');
+			},
+			{
+				offset:'70%',
+				triggerOnce:true
+
+			});
+			$('.Profile-mision').waypoint(function(){
+				$(this).toggleClass('fadeInRight animated');
+			},
+			{
+				offset:'70%',
+				triggerOnce:true
+
+			});
+			$('.Work-description').waypoint(function(){
+				$(this).toggleClass('fadeInRight animated');
+			},
+			{
+				offset:'80%',
+				triggerOnce:true
+
+			});
+			$('.Skills-description').waypoint(function(){
+				$(this).toggleClass('fadeInLeft animated');
+			},
+			{
+				offset:'80%',
+				triggerOnce:true
+
+			});
+			$('.Skills-icon').waypoint(function(){
+				$(this).toggleClass('rotateIn animated');
+			},
+			{
+				offset:'75%',
+				triggerOnce:true
+
+			});
+			$('.Skills-icon').waypoint(function(){
+				$('.Skills-objective').toggleClass('rotateIn animated');
+				$('.Skills-objective').toggleClass('tada animated');
+			},
+			{
+				offset:'75%',
+				triggerOnce:true
+
+			});
+			$('.Skills-objective').waypoint(function(){
+				$(this).toggleClass('fadeInDownBig animated');
+			},
+			{
+				offset:'75%',
+				triggerOnce:true
+
+			});
+			$('.Contact-title').waypoint(function(){
+				$(this).toggleClass('fadeInLeftBig animated');
+			},
+			{
+				offset:'75%',
+				triggerOnce:true
+
+			});
+			$('.Contact-parrafo').waypoint(function(){
+				$('.Hola-gratis').toggleClass('fadeInRight animated');
+			},
+			{
+				offset:'90%',
+				triggerOnce:true
+
+			});
+			$('.Contact-parrafo').waypoint(function(){
+				$(this).toggleClass('tada animated');
+			},
+			{
+				offset:'70%',
+				triggerOnce:true
+
+			});
+
+
 
 		});
 		// hasta aqui es el codigo ejecutador de animated.css

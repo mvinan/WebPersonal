@@ -40,6 +40,13 @@
 
 	.icon-display:before {
 		content: "\e956";
+		border: 16px solid rgb(255, 0, 203);
+		border-radius: 50%;
+		padding: 17px;
+		margin: 0;
+		background: rgb(234, 239, 225);
+		color: rgb(255, 0, 203);
+		display: none;
 	}
 
 	.icon-mobile:before {
@@ -280,9 +287,6 @@ section, header, footer{
 .Home-boxLink{
 	display: none;
 }
-.Home-link{
-	opacity: 0;
-}
 /*Perfil*/
 
 .Profile-boxTitle{
@@ -356,6 +360,7 @@ section, header, footer{
 .Profile-avatar{
 	width: 230px;
 	border-radius: 50%;
+	opacity: 0;
 }
 .Profile-imageDescription{
 	margin-top: 1em;
@@ -367,6 +372,7 @@ section, header, footer{
 	color: white;
 	border-radius: 10px;
 	border-bottom: 4px solid #159a59;
+	opacity: 0;
 }
 
 .Profile-mision{
@@ -377,7 +383,8 @@ section, header, footer{
 	padding: 1.6em;
 	color: white;
 	margin: 0 auto;
-	max-width: 300px;
+	width: 300px;
+	opacity: 0;
 }
 
 /*Work*/
@@ -462,6 +469,7 @@ section, header, footer{
 	padding: 2em 1.8em;
 	color: white;
 	max-width: 300px;
+	opacity: 0;
 }
 .Skills-list{
 	padding: 3em 0 0 0;
@@ -505,6 +513,7 @@ section, header, footer{
 	margin:0 auto;
 	padding: .8em 0;
 	width: 200px;
+	opacity: 0;
 }
 .Contact-subtitle{
 	font-size: 16px;
@@ -534,6 +543,10 @@ section, header, footer{
 .Contact-parrafo{
 	color: white;
 	padding: 1em 2em;
+	opacity: 0;
+}
+.Hola-gratis{
+	display: none;
 }
 
 /*Footer*/
@@ -571,6 +584,16 @@ section, header, footer{
 
 @media screen and (min-width: 750px ) {
 	
+	.Work-description,
+	.Skills-description{
+		opacity: 0;
+	}
+	.Header-item:nth-child(1),
+	.Header-item:nth-child(2),
+	.Header-item:nth-child(3),
+	.Header-item:nth-child(4){
+		opacity: 0;
+	}
 	.Header-btMenu{
 		display: none;
 	}
@@ -593,7 +616,6 @@ section, header, footer{
 		width: 4em;
 	}
 	.u-penultimoItem{
-		border-right: 2px solid white;
 		padding: 0 1em 0 0;
 	}
 	.Header-item:last-child{
@@ -620,6 +642,7 @@ section, header, footer{
 		text-decoration: none;
 		font-family: raleway;
 		letter-spacing: 2px;
+		opacity: 0;
 	}
 	/*Profile*/
 	.Profile{
@@ -647,6 +670,9 @@ section, header, footer{
 		left: 5%;
 		font-size: 2em;
 	}
+	.Profile-link{
+		opacity: 0;
+	}
 	.Profile-imageContainer{
 		display: inline-block;
 	}
@@ -661,7 +687,7 @@ section, header, footer{
 	}
 	.Profile-mision{
 		margin: 3.9em auto;
-		max-width: 300px ;
+		width: 300px ;
 		border-radius: 10px;
 		font-size: 1.5em;
 		display:inline-block;
@@ -818,7 +844,46 @@ section, header, footer{
 	.Profile-link{
 		opacity: 0;
 	}
-
+	.Profile-mision{
+		position: absolute;
+		right: 0;
+		border-radius: 30px 0 0 30px;
+		width: 500px;
+	}
+	.Profile-boxProfile{
+		height: 400px;
+	}
+	.Profile-imageContainer{
+		position: absolute;
+		left: 20%;
+	}
+	/*Work*/
+	.icon-display:before{
+		display: inline-block;
+	}
+	.Skills-icon{
+		opacity: 0;
+	}
+	.Contact{
+		position: relative;
+	}
+	.Contact-mediante{
+		position: absolute;
+		left: 15%;
+		top: 0;
+	}
+	.Hola-gratis{
+		display: block;
+		position: absolute;
+		color: whitesmoke;
+		background: crimson;
+		padding: 0.7em;
+		font-size: 3em;
+		border-radius: 90px 0 0 90px;
+		top: 190px;
+		right: 0;
+		opacity: 0;
+	}
 	
 
 	
