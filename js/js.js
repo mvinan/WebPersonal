@@ -89,10 +89,10 @@ window.setTimeout(function(){
 			});
 
 			$('.Profile-link').waypoint(function(){
-				$(this).toggleClass('rotateInDownLeft animated');
+				$(this).toggleClass('rollIn animated');
 				},
 				{
-					offset:'80%',
+					offset:'70%',
 					triggerOnce:true,
 			});
 
