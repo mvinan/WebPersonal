@@ -160,10 +160,10 @@
 }
 section, header, footer{
 	opacity: 0;
-	-webkit-transition:opacity .6s;
-	-moz-transition:opacity .6s;
-	-o-transition:opacity .6s;
-	transition: opacity .6s;
+	-webkit-transition:opacity .8s;
+	-moz-transition:opacity .8s;
+	-o-transition:opacity .8s;
+	transition: opacity .8s;
 }
 .loaded section,.loaded header,.loaded footer{
 	opacity: 1;
