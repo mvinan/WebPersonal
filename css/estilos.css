@@ -914,6 +914,11 @@ section, header, footer{
 		top: 0;
 		left: 400px;
 	}
+	.icon-github:hover{
+		top: -10px;
+		box-shadow: 0px 12px rgb(64, 87, 147);
+		color: rgb(42, 72, 150);
+	}
 
 	.Profile-mision{
 		position: absolute;
@@ -927,6 +932,17 @@ section, header, footer{
 	.Profile-imageContainer{
 		position: absolute;
 		left: 20%;
+	}
+	.Profile-linkDescription:hover{
+		position: relative;
+		top: -7px;
+		background: #1B92C6;
+		border-bottom: 7px solid #0E4998;
+	}
+	.Profile-linkDescription:active{
+		top: 0px;
+		background: #1B92C6;
+		border-bottom: 0px solid #0E4998;
 	}
 	/*Work*/
 	.icon-display:before{
