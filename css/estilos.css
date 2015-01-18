@@ -245,6 +245,9 @@ section, header, footer{
 }
 
 /*Home*/
+.Home-circle{
+	display: none;
+}
 .Home{
 	margin: 0;
 }
@@ -874,6 +877,18 @@ section, header, footer{
 	.Home-logo,
 	.Home-boxName{
 		opacity: 0;
+	}
+	.Home-circle{
+		position: fixed;
+		bottom: 14px;
+		right: 37px;
+		font-size: 3em;
+		color: rgba(1, 205, 177, 1);
+		background: rgba(7, 14, 23, 0.44);
+		border-radius: 50%;
+		z-index: 2;
+		text-decoration: none;
+		display: block;
 	}
 	/*empieza el Profile*/
 	.Profile-link{
