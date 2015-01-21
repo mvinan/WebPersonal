@@ -40,12 +40,12 @@
 
 	.icon-display:before {
 		content: "\e956";
-		border: 16px solid rgb(255, 0, 203);
+		border: 16px solid rgb(6, 162, 174);
 		border-radius: 50%;
-		padding: 17px;
 		margin: 0;
+		padding: .2em;
 		background: rgb(234, 239, 225);
-		color: rgb(255, 0, 203);
+		color: rgb(6, 162, 174);
 		display: none;
 	}
 
@@ -487,7 +487,7 @@ section, header, footer{
 	opacity: 0;
 }
 .Skills-list{
-	padding: 3em 0 0 0;
+	padding:0;
 	margin: 0;
 	text-align: center;
 }
@@ -496,9 +496,13 @@ section, header, footer{
 	display: inline-block;
 	color: #1bc676;
 	margin: .2em;
-	padding: 1em .4em;
+	padding: 1.5em .4em;
 	font-size: 2em;
 }
+.Skills-icon:last-child{
+	padding: 0;
+}
+
 .icon-tablet{
 	display: none;
 }
@@ -776,7 +780,10 @@ section, header, footer{
 	}
 	.Skills-icon{
 		font-size: 6em;
-		margin: .9em 0;
+		margin:0;
+	}
+	.icon-display:before{
+		display: none;
 	}
 	.icon-tablet{
 		display: inline-block;
@@ -965,6 +972,9 @@ section, header, footer{
 	}
 	.Skills-icon{
 		opacity: 0;
+	}
+	.Skills-icon:last-child{
+		padding: .4em .4em 0;
 	}
 	.Contact{
 		position: relative;
