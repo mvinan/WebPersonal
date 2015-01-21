@@ -1,5 +1,53 @@
 
 /*Fonts & Icons*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon2.eot?66b7sp');
+	src:url('../fonts/icomoon2.eot?#iefix66b7sp') format('embedded-opentype'),
+		url('../fonts/icomoon2.woff?66b7sp') format('woff'),
+		url('../fonts/icomoon2.ttf?66b7sp') format('truetype'),
+		url('../fonts/icomoon2.svg?66b7sp#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-square:before {
+	content: "\e600";
+	font-size: 1.5em;
+	color: #191919;
+}
+
+.icon-facebook2:before {
+	content: "\ea8d";
+	font-size: 1.5em;
+	color: #0080ff;
+}
+.icon-twitter2:before {
+	content: "\ea92";
+	font-size: 1.5em;
+	color: #66ccff;
+}
+
+.icon-github2:before {
+	content: "\eab2";
+	font-size: 1.5em;
+	color: #e6e6e6;
+}
+
 	@font-face {
 		font-family: 'icomoon';
 		src:url('../fonts/icomoon.eot?1730e6');
@@ -87,7 +135,8 @@
 
 	.icon-instagram:before {
 		content: "\ea90";
-		color: #a15b2f;
+		color: #CF7737;
+		font-size: 1.5em;
 
 	}
 
@@ -337,7 +386,7 @@ section, header, footer{
 	background: white;
 	font-size: 2.5em;
  	text-decoration: none;
- 	border-radius: 50%;
+ 	border-radius: 20px;
  	-webkit-transition: .5s;
  	-o-transition: .5s;
  	transition: .2s;
@@ -473,7 +522,7 @@ section, header, footer{
 	display: none;
 }
 .Skills-boxObjective{
-	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/coverWebDesign.jpg);
+	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/coverWebDesign.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 /*	background-size: auto 100%;*/
@@ -708,11 +757,12 @@ section, header, footer{
 	.Profile-list{
 		position: absolute;
 		float: left;
-		top: 21px;
+		top: 5px;
 		left: 5%;
 		font-size: 2em;
 	}
 	.Profile-link{
+		background: none;
 		opacity: 0;
 	}
 	.Profile-imageContainer{
@@ -903,42 +953,36 @@ section, header, footer{
 		position: absolute;
 		top: 0;
 	}
-	.icon-facebook3{
+	.icon-facebook2{
 		top:0;
-		left:100px;
+		left:0px;
 	}
-	.icon-facebook3:hover{
+	.icon-facebook2:hover{
 		top: -10px;
-		box-shadow: 0px 10px rgb(64, 87, 147);
 		color: rgb(42, 72, 150);
 	}
-	.icon-twitter3{
+	.icon-twitter2{
 		top: 0;
-		left: 200px;
+		left: 175px;
 	}
-	.icon-twitter3:hover{
+	.icon-twitter2:hover{
 		top: -10px;
-		box-shadow: 0px 10px rgb(64, 87, 147);
 		color: rgb(42, 72, 150);
 	}
 	.icon-instagram{
-		border-radius: 20px;
 		top: 0;
-		left: 300px;
+		left: 350px;
 	}
 	.icon-instagram:hover{
-		border-radius: 20px;
 		top: -10px;
-		box-shadow: 0px 12px rgb(64, 87, 147);
 		color: rgb(42, 72, 150);
 	}
-	.icon-github{
+	.icon-github2{
 		top: 0;
-		left: 400px;
+		left: 530px;
 	}
-	.icon-github:hover{
+	.icon-github2:hover{
 		top: -10px;
-		box-shadow: 0px 12px rgb(64, 87, 147);
 		color: rgb(42, 72, 150);
 	}
 
