@@ -522,14 +522,14 @@ section, header, footer{
 	display: none;
 }
 .Skills-boxObjective{
-	background: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/coverWebDesign.jpg);
+	background-color: #2b2b2b;
 	background-size: cover;
 	background-repeat: no-repeat;
 /*	background-size: auto 100%;*/
 	background-position: center;
 }
 .Skills-objective{
-	margin: 0 auto 1em;
+	margin: 0 auto 0;
 	padding: 2em 1.8em;
 	color: white;
 	max-width: 300px;
