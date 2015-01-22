@@ -1010,7 +1010,8 @@ section, header, footer{
 		background: #1B92C6;
 		border-bottom: 0px solid #0E4998;
 	}
-	/*Work*/
+	/*skills*/
+
 	.icon-display:before{
 		display: inline-block;
 	}
@@ -1020,6 +1021,15 @@ section, header, footer{
 	.Skills-icon:last-child{
 		padding: .4em .4em 0;
 	}
+	.icon-paint-brush{
+	
+	}
+	.icon-paint-brush:hover{
+
+	}
+
+	/*Contact*/
+
 	.Contact{
 		position: relative;
 	}
