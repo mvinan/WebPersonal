@@ -212,6 +212,9 @@
 	background-color: black;
 	background-size: 125px 91px; 
 }
+body{
+	background: #2b2b2b;
+}
 section, header, footer{
 	opacity: 0;
 	-webkit-transition:opacity .8s;
