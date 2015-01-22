@@ -135,7 +135,7 @@
 
 	.icon-instagram:before {
 		content: "\ea90";
-		color: #CF7737;
+		color: #e75c3e;
 		font-size: 1.5em;
 
 	}
@@ -386,7 +386,6 @@ section, header, footer{
 .Profile-link{
 	padding:0;
 	margin: .1em;
-	background: white;
 	font-size: 2.5em;
  	text-decoration: none;
  	border-radius: 20px;
@@ -657,6 +656,38 @@ section, header, footer{
 	color:chartreuse;
 }
 
+/*Extras*/
+.Profile-spanGithub,
+.Profile-spanInstagram{
+	opacity:0;
+	font-size: .6em;
+	font-family: raleway;
+	text-decoration: none;
+	color: #FFFFFF;
+	top:-150px;
+	position: absolute;
+	left: -96px;
+	padding: .4em .9em;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.Profile-spanFacebook,
+.Profile-spanTwitter{
+	opacity:0;
+	font-size: .6em;
+	font-family: raleway;
+	text-decoration: none;
+	color: #FFFFFF;
+	top:-150px;
+	position: absolute;
+	left: 0px;
+	padding: .4em .9em;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
 @media screen and (min-width: 750px ) {
 	.Header{
 		background:rgba(220,228,221,0.30);
@@ -845,7 +876,7 @@ section, header, footer{
 		display: inline-block;
 	}
 	.Skills-objective{
-		max-width: 500px;
+		max-width: 80%;
 		text-align: center;
 		font-size: 2em;
 	}
@@ -1056,7 +1087,68 @@ section, header, footer{
 		right: 0;
 		opacity: 0;
 	}
-	
-
-	
+	/*Extras*/
+	.icon-github2:hover .Profile-spanGithub,
+	.icon-instagram:hover .Profile-spanInstagram{
+		position: absolute;
+		display: block;
+		top: -110px;
+		left: -97px;
+		background: rgba(0, 127, 254, .5);
+		border-radius: 20px;
+		opacity: .9;
+		border-bottom: 4px solid rgb(160, 202, 244);
+	}
+	.icon-twitter2:hover .Profile-spanTwitter,
+	.icon-facebook2:hover .Profile-spanFacebook{
+		position: absolute;
+		display: block;
+		top: -110px;
+		background: rgba(0, 127, 254, .5);
+		border-radius: 20px;
+		opacity: .9;
+		border-bottom: 4px solid rgb(160, 202, 244);
+	}
+	.icon-twitter2:hover .Profile-spanTwitter{
+		background:rgba(101,203,254,0.5);
+	}
+	.icon-instagram:hover .Profile-spanInstagram{
+		background:rgba(217, 92, 66, 0.74);
+	}
+	.icon-github2:hover .Profile-spanGithub{
+		background:rgba(0,0,0,0.5);
+	}
+	.Profile-spanGithub:after,
+	.Profile-spanInstagram:after{
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 160px;
+		margin-left: -9px;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid rgb(160, 202, 244);
+	}
+	.Profile-spanTwitter:after,
+	.Profile-spanFacebook:after{
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 59px;
+		margin-left: -9px;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid rgb(160, 202, 244);
+	}
+	.icon-paint-brush:before:hover{
+		transform:scale(1.5);
+		-webkit-transform:scale(1.5);
+		-webkit-transition: all .6s ease-in-out;
+		-o-transition: all .6s ease-in-out;
+		transition: all .6s ease-in-out;
+	}
 }
