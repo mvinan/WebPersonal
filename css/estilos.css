@@ -658,7 +658,10 @@ section, header, footer{
 }
 
 @media screen and (min-width: 750px ) {
-	
+	.Header{
+		background:rgba(220,228,221,0.30);
+		border-bottom: none;
+	}
 	.Work-description,
 	.Skills-description{
 		opacity: 0;
