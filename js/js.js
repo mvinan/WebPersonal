@@ -157,7 +157,7 @@ window.setTimeout(function(){
 				$(this).toggleClass('fadeInDownBig animated');
 			},
 			{
-				offset:'75%',
+				offset:'80%',
 				triggerOnce:true
 
 			});
