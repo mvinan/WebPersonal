@@ -569,6 +569,7 @@ section, header, footer{
 	background: #195097;
 	margin: 0;
 	text-align: center;
+	padding: 1em;
 }
 .Footer-title{
 	margin: 0;
@@ -1071,11 +1072,11 @@ width: 100%;
 		margin: .5em;
 		display: inline-block;
 		font-size: 2em;
-		width: 45%;
+		width: 400px;
 	}
 	.Skills-icon:hover .spanSkillsBarA{
 		opacity: 1;
-		width: 88%;
+		width: 336px;
 	}
 	.Skills-icon:hover .spanSkillsBarB{
 		opacity: 1;
@@ -1087,7 +1088,7 @@ width: 100%;
 	}
 	.Skills-icon:hover .spanSkillsBarD{
 		opacity: 1;
-		width: 40%;
+		width: 150px;
 	}
 	.Skills-icon:hover .spanSkillsText{
 		opacity: 0;
@@ -1130,15 +1131,16 @@ width: 100%;
 		opacity: 0;
 		width: 150px;
 		top: .5em;
+		left: 62px;
 	}
 	.spanSkillsBarA{
 		background: rgb(0, 205, 153);
 		padding: 1em;
 		position: absolute;
-		height: 7%;
+		height: 34px;
 		bottom: 0;
 		left: 0;
-		border-radius: 0 20px 0 20px;
+		border-radius: 0 0 20px 20px;
 		width: 0%;
 		transition: all .5s ease-in-out;
 		opacity: 0;
@@ -1147,10 +1149,10 @@ width: 100%;
 		background: rgb(216, 64, 116);
 		padding: 1em;
 		position: absolute;
-		height: 7%;
+		height: 34px;
 		bottom: 0;
 		left: 0;
-		border-radius: 0 20px 0 20px;
+		border-radius: 0 0 20px 20px;
 		width: 0%;
 		transition: all .5s ease-in-out;
 		opacity: 0;
@@ -1159,10 +1161,10 @@ width: 100%;
 		background: rgb(215, 57, 51);
 		padding: 1em;
 		position: absolute;
-		height: 7%;
+		height: 34px;
 		bottom: 0;
 		left: 0;
-		border-radius: 0 20px 0 20px;
+		border-radius: 0 0 20px 20px;
 		width: 0%;
 		transition: all .5s ease-in-out;
 		opacity: 0;
@@ -1171,10 +1173,10 @@ width: 100%;
 		background: rgb(215, 97, 51);
 		padding: 1em;
 		position: absolute;
-		height: 7%;
+		height: 34px;
 		bottom: 0;
 		left: 0;
-		border-radius: 0 20px 0 20px;
+		border-radius: 0 0 20px 20px;
 		width: 0%;
 		transition: all .5s ease-in-out;
 		opacity: 0;
@@ -1264,7 +1266,7 @@ width: 100%;
 	}
 	.Skills-images{
 		display: inline-block;
-		width: 100%;
+		width: 400px;
 	}
 	/*Footer*/
 	.Footer-up{
