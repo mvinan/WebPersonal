@@ -153,7 +153,7 @@
 	background-size: 125px 91px; 
 }
 body{
-	background: #2b2b2b;
+	background: #3C3B3B;
 }
 section, header, footer{
 	opacity: 0;
@@ -314,11 +314,13 @@ section, header, footer{
 	color: white;
 	font-weight: normal;
 }
+
 .Profile-list{
 	list-style: none;
 	text-align: center;
 	padding: .5em 0;
 	position: relative;
+	margin-top: 2em;
 }
 .Profile-item{
 	display: inline-block;
@@ -423,6 +425,9 @@ section, header, footer{
 .Work-description{
 	display: none;
 }
+.Work-boxRslides{
+	margin-top: 2em;
+}
 #slider3-pager{
 	text-align: center;
 }
@@ -472,7 +477,7 @@ section, header, footer{
 	color: white;
 	width: 77%;
 	opacity: 0;
-	background: rgb(56,56,56);
+	background: #212121;
 	border-radius: 30px 30px 0 0;
 }
 .Skills-icon{
@@ -499,7 +504,6 @@ section, header, footer{
 
 /*Contact*/
 .Contact{
-	background: #212121;
 	text-align: center;
 	padding-bottom: 1em;
 	margin-bottom: 0;
@@ -645,6 +649,20 @@ section, header, footer{
 display: block;
 width: 100%;
 }
+.Contact-subtitle:after,
+.Skills-subtitle:after,
+.Work-subtitle:after,
+.Profile-subtitle:after{
+	content: '';
+	position: absolute;
+	bottom: -19px;
+	left: 46%;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid rgb(38, 38, 38);
+}
 
 @media screen and (min-width: 750px ) {
 	.Header{
@@ -755,6 +773,7 @@ width: 100%;
 		top: 5px;
 		left: 5%;
 		font-size: 2em;
+		margin-top: .5em;
 	}
 	.Profile-link{
 		background: none;
@@ -892,6 +911,22 @@ width: 100%;
 	display: block;
 	width: 100%;
 	}
+	.Profile-subtitle:after{
+		bottom: -64px;
+		left: -5%;
+		border-left: 30px solid transparent;
+		border-right:30px solid transparent;
+		border-top: 30px solid rgb(38,38,38);
+	}
+	.Contact-subtitle:after,
+	.Skills-subtitle:after,
+	.Work-subtitle:after{
+		bottom: -92px;
+		left: 39%;
+		border-left: 30px solid transparent;
+		border-right:30px solid transparent;
+		border-top: 30px solid rgb(38,38,38);
+	}
 
 
 }
@@ -1020,6 +1055,11 @@ width: 100%;
 		background: #1B92C6;
 		border-bottom: 0px solid #0E4998;
 	}
+	/*Work*/
+	.Work-boxRslides{
+		margin-top: 4em;
+	}
+
 	/*skills*/
 
 	.icon-display:before{
@@ -1031,6 +1071,115 @@ width: 100%;
 		display: inline-block;
 		font-size: 2em;
 		width: 45%;
+	}
+	.Skills-icon:hover .spanSkillsBarA{
+		opacity: 1;
+		width: 88%;
+	}
+	.Skills-icon:hover .spanSkillsBarB{
+		opacity: 1;
+		width: 70%;
+	}
+	.Skills-icon:hover .spanSkillsBarC{
+		opacity: 1;
+		width: 60%;
+	}
+	.Skills-icon:hover .spanSkillsBarD{
+		opacity: 1;
+		width: 40%;
+	}
+	.Skills-icon:hover .spanSkillsText{
+		opacity: 0;
+	}
+	.Skills-icon:hover .ImgD:after,
+	.Skills-icon:hover .ImgC:after,
+	.Skills-icon:hover .ImgB:after,
+	.Skills-icon:hover .ImgA:after{
+		opacity: 1;
+	}
+	.ImgA:after{
+		content: 'Nivel 4/4';
+		color: white;
+		font-family: raleway;
+		position: absolute;
+		opacity: 0;
+		width: 150px;
+		top: .5em;
+	}
+	.ImgB:after{
+		content: 'Nivel 3/4';
+		font-family: raleway;
+		position: absolute;
+		opacity: 0;
+		width: 150px;
+		top: .5em;
+	}
+	.ImgC:after{
+		content: 'Nivel 3/4';
+		font-family: raleway;
+		position: absolute;
+		opacity: 0;
+		width: 150px;
+		top: .5em;
+	}
+	.ImgD:after{
+		content: 'Nivel 2/4';
+		font-family: raleway;
+		position: absolute;
+		opacity: 0;
+		width: 150px;
+		top: .5em;
+	}
+	.spanSkillsBarA{
+		background: rgb(0, 205, 153);
+		padding: 1em;
+		position: absolute;
+		height: 7%;
+		bottom: 0;
+		left: 0;
+		border-radius: 0 20px 0 20px;
+		width: 0%;
+		transition: all .5s ease-in-out;
+		opacity: 0;
+	}
+	.spanSkillsBarB{
+		background: rgb(216, 64, 116);
+		padding: 1em;
+		position: absolute;
+		height: 7%;
+		bottom: 0;
+		left: 0;
+		border-radius: 0 20px 0 20px;
+		width: 0%;
+		transition: all .5s ease-in-out;
+		opacity: 0;
+	}
+	.spanSkillsBarC{
+		background: rgb(215, 57, 51);
+		padding: 1em;
+		position: absolute;
+		height: 7%;
+		bottom: 0;
+		left: 0;
+		border-radius: 0 20px 0 20px;
+		width: 0%;
+		transition: all .5s ease-in-out;
+		opacity: 0;
+	}
+	.spanSkillsBarD{
+		background: rgb(215, 97, 51);
+		padding: 1em;
+		position: absolute;
+		height: 7%;
+		bottom: 0;
+		left: 0;
+		border-radius: 0 20px 0 20px;
+		width: 0%;
+		transition: all .5s ease-in-out;
+		opacity: 0;
+	}
+	.Skills-boxObjective{
+		margin-top: 2em;
 	}
 
 	/*Contact*/
