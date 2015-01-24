@@ -497,6 +497,7 @@ section, header, footer{
 }
 .spanSkills{
 	color: #c7cdc7;
+	font-family: Oswald;
 }
 .Skills-icon:last-child{
 	padding: 0;
@@ -565,7 +566,7 @@ section, header, footer{
 /*Footer*/
 
 .Footer{
-	background: #1186fc;
+	background: #195097;
 	margin: 0;
 	text-align: center;
 }
@@ -1100,7 +1101,7 @@ width: 100%;
 	.ImgA:after{
 		content: 'Nivel 4/4';
 		color: white;
-		font-family: raleway;
+		font-family: OSwald;
 		position: absolute;
 		opacity: 0;
 		width: 150px;
@@ -1108,7 +1109,7 @@ width: 100%;
 	}
 	.ImgB:after{
 		content: 'Nivel 3/4';
-		font-family: raleway;
+		font-family: Oswald;
 		position: absolute;
 		opacity: 0;
 		width: 150px;
@@ -1116,7 +1117,7 @@ width: 100%;
 	}
 	.ImgC:after{
 		content: 'Nivel 3/4';
-		font-family: raleway;
+		font-family: Oswald;
 		position: absolute;
 		opacity: 0;
 		width: 150px;
@@ -1124,7 +1125,7 @@ width: 100%;
 	}
 	.ImgD:after{
 		content: 'Nivel 2/4';
-		font-family: raleway;
+		font-family: Oswald;
 		position: absolute;
 		opacity: 0;
 		width: 150px;
@@ -1261,15 +1262,11 @@ width: 100%;
 		border-right: 10px solid transparent;
 		border-top: 10px solid rgb(160, 202, 244);
 	}
-	.icon-paint-brush:before:hover{
-		transform:scale(1.5);
-		-webkit-transform:scale(1.5);
-		-webkit-transition: all .6s ease-in-out;
-		-o-transition: all .6s ease-in-out;
-		transition: all .6s ease-in-out;
-	}
 	.Skills-images{
 		display: inline-block;
 		width: 100%;
 	}
+	/*Footer*/
+	.Footer-up{
+		display:none;}
 }
