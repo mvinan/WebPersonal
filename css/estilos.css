@@ -476,16 +476,20 @@ section, header, footer{
 .Skills-icon{
 	opacity: 0;
 	display: block;
-	font-size: 1em;
+	font-size: 1.5em;
 	background: #161616;
 	border-radius: 20px;
 	padding: 1em;
 	margin: 2em 1em 2em;
-	text-align:left;
+	text-align:center;
+}
+.Skills-icon:before{
+	position: relative;
+	top: -10px;
+	font-size: 2em;
 }
 .spanSkills{
 	color: #c7cdc7;
-	margin-left: 1em;
 }
 .Skills-icon:last-child{
 	padding: 0;
@@ -636,7 +640,8 @@ section, header, footer{
 	transition: all .3s ease-in-out;
 }
 .Skills-images{
-display: none;
+display: block;
+width: 100%;
 }
 
 @media screen and (min-width: 750px ) {
@@ -873,7 +878,7 @@ display: none;
 	.Skills-icon{
 		font-size: 3em;
 		position: relative;
-		width: 600px;
+		width: 550px;
 		margin: 1em auto;
 		text-align: center;
 		padding: 0 0 .5em;
@@ -884,7 +889,7 @@ display: none;
 	}
 	.Skills-images{
 	display: block;
-	width: 600px;
+	width: 100%;
 	}
 
 
@@ -1023,6 +1028,8 @@ display: none;
 		opacity: 0;
 		margin: .5em;
 		display: inline-block;
+		font-size: 2em;
+		width: 45%;
 	}
 
 	/*Contact*/
