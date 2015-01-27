@@ -1207,6 +1207,7 @@ width: 100%;
 
 	.Contact{
 		position: relative;
+		background-size: cover;
 		background-attachment: fixed;
 	}
 	.Contact-parrafo{
