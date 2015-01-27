@@ -856,9 +856,8 @@ width: 100%;
 	/*Di, HOla (Contact)*/
 	.Contact{
 		background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/contact.jpg);
-		background-attachment: fixed;
 		background-position: center;
-		background-size: 100% 100%;
+		background-size: 140% 100%;
 	}
 	.Contact-logo{
 		margin: 4em 2em 1em 0;
@@ -1206,6 +1205,7 @@ width: 100%;
 
 	.Contact{
 		position: relative;
+		background-attachment: fixed;
 	}
 	.Contact-parrafo{
 		font-size: 1.3em;
