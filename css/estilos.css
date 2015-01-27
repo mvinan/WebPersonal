@@ -570,6 +570,7 @@ section, header, footer{
 	margin: 0;
 	text-align: center;
 	padding: 1em;
+	position: relative;
 }
 .Footer-title{
 	margin: 0;
@@ -595,7 +596,7 @@ section, header, footer{
 	left: 0;
 	right: 0;
 	bottom: -32px;
-	position: relative;
+	position: absolute;
 	padding: .5em;
 	display: block;
 }
@@ -856,8 +857,9 @@ width: 100%;
 	/*Di, HOla (Contact)*/
 	.Contact{
 		background-image: url(https://raw.githubusercontent.com/mvinan/webpersonal/gh-pages/Images/contact.jpg);
-		background-position: center;
-		background-size: 140% 100%;
+		background-position: bottom;
+		background-size: 900px 640px;
+		background-repeat: no-repeat;
 	}
 	.Contact-logo{
 		margin: 4em 2em 1em 0;
